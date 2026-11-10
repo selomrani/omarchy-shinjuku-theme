@@ -4,8 +4,10 @@
 
 [bar]
 # Alpha companions (where present) range from 0 (invisible) to 1 (opaque).
-background       = "#14121f"
-background-alpha = 1.0
+# A near-opaque, deeper-than-desktop bar keeps the status line readable over
+# bright wallpapers while still hinting at translucency.
+background       = "#100e1b"
+background-alpha = 0.96
 text             = "#a9b1d6"
 # Modules calling attention to themselves (recording, voxtype, alerts, updates)
 active           = "#f7768e"
@@ -20,8 +22,8 @@ size-vertical    = 28
 # Shared Hyprland-derived border tokens. Surface sections reference these so
 # lock, notifications, popups, and menu-style cards stay aligned with the
 # current Hyprland active-border gradient.
-active-border            = "#7dcfff"
-active-border-foreground = "#a9b1d6"
+active-border            = "#7dcfff #bb9af7 45deg"
+active-border-foreground = "#c8d3f5"
 
 [controls]
 # Shared state tokens for interactive control chrome (buttons, dropdowns,
@@ -124,31 +126,33 @@ base-size = 12
 # Border accepts either a solid color or a Hyprland-style gradient. Border
 # widths accept one CSS-style scalar/list: N, "Y X", "T X B", or "T R B L";
 # individual border-width-top/right/bottom/left keys override the list.
-background       = "#14121f"
-background-alpha = 1.0
+# Flyouts sit one step lighter than the desktop so cards separate from the
+# bar, with a hairline gradient edge shared with focused windows.
+background       = "#1e1b2e"
+background-alpha = 0.97
 text             = "#a9b1d6"
 border           = "hyprland.active-border"
 border-alpha     = 1.0
-# border-width     = 2
+border-width     = 1
 
 [tooltip]
 # Hover tooltips across the bar, panels, and buttons. background-alpha of
 # 0.97 mirrors the legacy hard-coded tooltip opacity.
-background       = "#14121f"
+background       = "#100e1b"
 background-alpha = 0.97
 text             = "#a9b1d6"
-border           = "hyprland.active-border-foreground"
+border           = "#3b3752"
 border-alpha     = 1.0
 
 [notifications]
-background       = "#14121f"
-background-alpha = 1.0
+# Notifications use the lighter card surface and a 2px gradient rail, which
+# reads as the same family as focused window borders.
+background       = "#1e1b2e"
+background-alpha = 0.98
 text             = "#a9b1d6"
-# Conventionally matches the Hyprland active-window border. Border accepts
-# either a solid color or the full active-border gradient.
 border           = "hyprland.active-border"
 border-alpha     = 1.0
-# border-width     = 2
+border-width     = 2
 countdown        = "#7dcfff"
 
 [launcher]
