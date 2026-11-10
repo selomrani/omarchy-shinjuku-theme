@@ -152,6 +152,17 @@ color perception.
 Add personal wallpapers to `~/.config/omarchy/backgrounds/shinjuku/`; they join
 the rotation without touching the repository.
 
+The bar background is a per-user setting rather than a theme file:
+
+```bash
+omarchy bar background glassy   # frosted: blurred wallpaper behind the bar
+omarchy bar background opaque   # solid bar using the theme color
+omarchy bar background none     # fully clear bar
+```
+
+Pick `glassy` for the intended blurred look. `none` ignores the theme's bar
+color entirely, so it will read as see-through.
+
 The gradient lives in `colors.toml`:
 
 ```toml

@@ -162,7 +162,7 @@ countdown        = "#7dcfff"
 # dim layer behind the card; background is the card itself. The launcher is
 # slightly more translucent than menus so the wallpaper still breathes.
 background                = "#1e1b2e"
-background-alpha          = 0.92
+background-alpha          = 0.95
 text                      = "#a9b1d6"
 border                    = "hyprland.active-border"
 border-alpha              = 1.0
@@ -220,7 +220,7 @@ border-active    = "#7dcfff"
 border-error     = "#f7768e"
 border-alpha     = 1.0
 background       = "#14121f"
-background-alpha = 0.82
+background-alpha = 0.88
 selection        = "#7dcfff"
 selection-alpha  = 0.45
 
