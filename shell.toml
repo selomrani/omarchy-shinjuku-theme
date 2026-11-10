@@ -35,35 +35,35 @@ active-border-foreground = "#c8d3f5"
 # solid color or a Hyprland-style gradient, e.g. "rgba(...) rgba(...) 45deg".
 normal-color        = "#a9b1d6"
 normal-fill-alpha   = 0.04
-normal-border       = "#a9b1d6"
+normal-border       = "#3b3752"
 normal-border-width = 1
-normal-border-alpha = 0.4
+normal-border-alpha = 0.6
 
-# Hover-cursor: mouse hover and the panel keyboard cursor.
-hover-cursor-color        = "#a9b1d6"
-hover-cursor-fill-alpha   = 0.08
-hover-cursor-border       = "#a9b1d6"
+# Hover-cursor: mouse hover and the panel keyboard cursor. Cyan makes the
+# pointer feel like a neon sign rather than another grey edge.
+hover-cursor-color        = "#7dcfff"
+hover-cursor-fill-alpha   = 0.10
+hover-cursor-border       = "#7dcfff"
 hover-cursor-border-width = 1
-hover-cursor-border-alpha = 0.25
+hover-cursor-border-alpha = 0.35
 
-# Focus: Qt activeFocus. Mirror the hover-cursor values by default so
-# mouse hover, keyboard cursor, and tab focus all read as the same state
-# — themes that want focus to stand out override these four lines.
-focus-color        = "#a9b1d6"
-focus-fill-alpha   = 0.08
-focus-border       = "#a9b1d6"
+# Focus: Qt activeFocus. A stronger cyan than hover so keyboard focus always
+# wins when both states are on screen.
+focus-color        = "#7dcfff"
+focus-fill-alpha   = 0.10
+focus-border       = "#7dcfff"
 focus-border-width = 1
-focus-border-alpha = 0.25
+focus-border-alpha = 0.55
 
 # Selected: persistent chosen/current state.
-selected-color        = "#a9b1d6"
-selected-fill-alpha   = 0.18
-selected-border       = "#a9b1d6"
-selected-border-width = 0
-selected-border-alpha = 1.0
+selected-color        = "#c8d3f5"
+selected-fill-alpha   = 0.20
+selected-border       = "#7dcfff"
+selected-border-width = 1
+selected-border-alpha = 0.60
 
 # Momentary fills.
-pressed-fill-alpha   = 0.22
+pressed-fill-alpha   = 0.24
 selection-fill-alpha = 0.35
 
 [spacing]
@@ -158,37 +158,37 @@ countdown        = "#7dcfff"
 [launcher]
 # Same six tokens as [menu], applied to the launcher overlay. Alpha
 # companions go from 0 (invisible) to 1 (opaque). scrim is the full-screen
-# dim layer behind the card; background is the card itself. Defaults
-# mirror [menu] with the card at 0.95 to preserve the legacy translucency.
-background                = "#14121f"
-background-alpha          = 0.95
+# dim layer behind the card; background is the card itself. The launcher is
+# slightly more translucent than menus so the wallpaper still breathes.
+background                = "#1e1b2e"
+background-alpha          = 0.92
 text                      = "#a9b1d6"
-border                    = "hyprland.active-border-foreground"
+border                    = "hyprland.active-border"
 border-alpha              = 1.0
-scrim                     = "#14121f"
-scrim-alpha               = 0.5
-selected-background       = "#a9b1d6"
-selected-background-alpha = 0.08
+scrim                     = "#0b0a12"
+scrim-alpha               = 0.55
+selected-background       = "#7dcfff"
+selected-background-alpha = 0.14
 selected-text             = "#7dcfff"
-selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.25
+selected-border           = "#7dcfff"
+selected-border-alpha     = 0.45
 
 [menu]
 # Cards, rows, and selected-row treatment. Alpha companions (where present)
 # go from 0 (invisible) to 1 (opaque). scrim is the full-screen dim layer
 # behind the card. Clipboard and emojis inherit these tokens.
-background                = "#14121f"
-background-alpha          = 1.0
+background                = "#1e1b2e"
+background-alpha          = 0.98
 text                      = "#a9b1d6"
-border                    = "hyprland.active-border-foreground"
+border                    = "hyprland.active-border"
 border-alpha              = 1.0
-scrim                     = "#14121f"
-scrim-alpha               = 0.5
-selected-background       = "#a9b1d6"
-selected-background-alpha = 0.08
+scrim                     = "#0b0a12"
+scrim-alpha               = 0.50
+selected-background       = "#7dcfff"
+selected-background-alpha = 0.14
 selected-text             = "#7dcfff"
-selected-border           = "hyprland.active-border-foreground"
-selected-border-alpha     = 0.25
+selected-border           = "#7dcfff"
+selected-border-alpha     = 0.45
 
 [polkit]
 # Polkit authentication prompt (sudo/password dialogs). scrim is the
