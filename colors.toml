@@ -29,3 +29,9 @@ bright_green = "#b9f27c"
 bright_cyan = "#7dcfff"
 bright_blue = "#82aaff"
 bright_magenta = "#c099ff"
+
+# Gradient borders: cyan to violet, angled 45 degrees.
+# Omarchy's Hyprland and shell templates render these across window,
+# popup, and notification borders.
+hyprland_active_border = "#7dcfff #bb9af7 45deg"
+hyprland_inactive_border = "#3b3752"
