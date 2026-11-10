@@ -35,3 +35,6 @@ bright_magenta = "#c099ff"
 # popup, and notification borders.
 hyprland_active_border = "#7dcfff #bb9af7 45deg"
 hyprland_inactive_border = "#3b3752"
+
+selection_foreground = "#c8d3f5"
+selection_background = "#2a2740"
