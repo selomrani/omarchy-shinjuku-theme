@@ -7,13 +7,15 @@ cyan-to-violet gradient borders.
 ![Shinjuku desktop preview](preview.png)
 
 ```bash
-omarchy theme install https://github.com/<your-user>/omarchy-shinjuku-theme.git
+omarchy theme install https://github.com/selomrani/omarchy-shinjuku-theme.git
 ```
 
-Replace `<your-user>` with the GitHub account that hosts this repo. Omarchy
-takes the theme name from the repository name, so keep it called
-`omarchy-shinjuku-theme` (the `omarchy-` prefix and `-theme` suffix are
-stripped, leaving `shinjuku`). Installing applies **Shinjuku** automatically.
+This theme is published at
+[github.com/selomrani/omarchy-shinjuku-theme](https://github.com/selomrani/omarchy-shinjuku-theme).
+Omarchy takes the theme name from the repository name, so keep it called
+`omarchy-shinjuku-theme` when you fork it (the `omarchy-` prefix and `-theme`
+suffix are stripped, leaving `shinjuku`). Installing applies **Shinjuku**
+automatically.
 
 ## Highlights
 
@@ -38,7 +40,7 @@ stripped, leaving `shinjuku`). Installing applies **Shinjuku** automatically.
 ### From the repository (recommended)
 
 ```bash
-omarchy theme install https://github.com/<your-user>/omarchy-shinjuku-theme.git
+omarchy theme install https://github.com/selomrani/omarchy-shinjuku-theme.git
 ```
 
 The command clones the repo to `~/.config/omarchy/themes/shinjuku` and applies
