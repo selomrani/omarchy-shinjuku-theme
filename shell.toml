@@ -1,6 +1,7 @@
-# Omarchy shell surfaces. Colors derive from colors.toml; sizes and the
-# typographic scale come from the keys below. Themes can ship
-# themes/<name>/shell.toml to replace this generated file.
+# Omarchy shell surfaces for the Shinjuku theme. The theme ships this file
+# instead of letting Omarchy derive it, so the bar, flyouts, launcher, menus,
+# lock screen, and notifications can be tuned together. Colors are literal;
+# sizes and the typographic scale stay at Omarchy's defaults.
 
 [bar]
 # Alpha companions (where present) range from 0 (invisible) to 1 (opaque).
@@ -196,19 +197,21 @@ selected-border-alpha     = 0.45
 # text-error tints the lock icon, password text, and placeholder when
 # authentication fails. border-alpha applies to both border and
 # border-error (the two states are mutually exclusive in time).
-background       = "#14121f"
+background       = "#1e1b2e"
 background-alpha = 1.0
 text             = "#a9b1d6"
 text-error       = "#f7768e"
 border           = "hyprland.active-border"
 border-error     = "#f7768e"
 border-alpha     = 1.0
-scrim            = "#14121f"
-scrim-alpha      = 0.5
+scrim            = "#0b0a12"
+scrim-alpha      = 0.55
 # accent is the lock-icon glyph color + text-selection tint.
 accent           = "#7dcfff"
 
 [lock]
+# Password card for the lock screen. The border starts muted, turns cyan
+# while typing or authenticating, and red after a failed attempt.
 text             = "#c8d3f5"
 placeholder      = "#565f89"
 text-error       = "#f7768e"
@@ -217,9 +220,10 @@ border-active    = "#7dcfff"
 border-error     = "#f7768e"
 border-alpha     = 1.0
 background       = "#14121f"
-background-alpha = 0.8
+background-alpha = 0.82
 selection        = "#7dcfff"
 selection-alpha  = 0.45
+
 [image-picker]
 # Carousel-style picker shown directly over the desktop, with no card
 # surface or backdrop wash. Per-slice dim overlays and text outlines
