@@ -1,0 +1,11 @@
+# Editor and OS cruft
+.DS_Store
+Thumbs.db
+*.swp
+*~
+*.bak
+*.tmp
+
+# Preview working files
+/preview-*.xcf
+/preview-*.mdp
