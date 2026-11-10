@@ -53,7 +53,7 @@ omarchy theme update
 ### Manual / development copy
 
 ```bash
-git clone https://github.com/<your-user>/omarchy-shinjuku-theme.git \
+git clone https://github.com/selomrani/omarchy-shinjuku-theme.git \
   ~/.config/omarchy/themes/shinjuku
 omarchy theme set Shinjuku
 ```
